@@ -1,4 +1,8 @@
 import numpy as np
+import argparse
+
+parser = argparse.ArgumentPasser(description='Processing maths in parabolic function')
+parser.add_argument('Coefficients', metavar='a, b, c', nargs = 3, help='Input for coefficients')
 
 def getDelta(a, b, c):
     return b*b-4*a*c
@@ -19,6 +23,6 @@ def getROF(a, b, c):
         return x1, x2
 
 
-print(getDelta(1, 5, 6))
-print(getVertex(1, 5, 6))
-print(getROF(1, -5, 6))
+print(getDelta(d, e, f))
+print(getVertex(d, e, f))
+print(getROF(d, e, f))
